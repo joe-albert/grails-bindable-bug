@@ -2,7 +2,7 @@ package exampleapplication
 
 import grails.validation.Validateable
 
-class ExampleCommandObject implements Validateable, Serializable {
+class ExampleBrokenCommandObject implements Validateable, Serializable {
 
     String bindableProperty
     String nonBindableProperty

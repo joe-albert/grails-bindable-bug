@@ -3,11 +3,11 @@ package exampleapplication
 import grails.web.databinding.DataBinder
 import spock.lang.Specification
 
-class ExampleCommandObjectUnitSpec extends Specification implements DataBinder {
+class ExampleBrokenCommandObjectUnitSpec extends Specification implements DataBinder {
 
     def "test that bindable constraint #desc"() {
         given:
-        ExampleCommandObject command = new ExampleCommandObject()
+        ExampleBrokenCommandObject command = new ExampleBrokenCommandObject()
         command.bindableProperty = 'foo'
         command.nonBindableProperty = 'foo'
 
