@@ -8,7 +8,7 @@ class ExampleBrokenCommandObject implements Validateable, Serializable {
     String nonBindableProperty
 
     static constraints = {
-        nonBindableProperty null: false, bindable: false
-        bindableProperty null: false
+        nonBindableProperty nullable: false, bindable: false
+        bindableProperty nullable: false
     }
 }
